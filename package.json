@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "main": "bin/www.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jhoanegar/vid-lib-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jhoanegar/vid-lib-dev/issues"
+  },
+  "homepage": "https://github.com/Jhoanegar/vid-lib-dev#readme",
+  "description": ""
+}
