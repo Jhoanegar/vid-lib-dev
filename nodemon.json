@@ -1,0 +1,5 @@
+{
+  "watch": ["app", "bin"],
+  "ext": "mts",
+  "exec": "npx tsx ./bin/www.mts"
+}
