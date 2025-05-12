@@ -1,8 +1,9 @@
 {
-  "name": "y",
+  "name": "vid-lib-dev",
   "version": "1.0.0",
-  "main": "bin/www.ts",
+  "type": "module",
   "scripts": {
+    "dev": "NODE_PATH=. nodemon",
     "test": "test"
   },
   "repository": {
@@ -15,5 +16,16 @@
     "url": "https://github.com/Jhoanegar/vid-lib-dev/issues"
   },
   "homepage": "https://github.com/Jhoanegar/vid-lib-dev#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nconf": "^0.13.0",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/nconf": "^0.10.7",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
 }
