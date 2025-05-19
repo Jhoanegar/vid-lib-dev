@@ -1,6 +1,6 @@
 import globals from 'globals';
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
+import tseslint from '@typescript-eslint/eslint-plugin';
 import jsonPlugin from 'eslint-plugin-json';
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 import i18next from 'eslint-plugin-i18next';
