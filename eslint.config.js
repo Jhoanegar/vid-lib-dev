@@ -81,7 +81,5 @@ export default tseslint.config(
     files: ['**/*.json'],
     extends: [jsonPlugin.configs.recommended],
   },
-  {
-    files: ['**/*.test.m{ts,js}', 'test/**/*'],
-  },
+// (Remove these lines entirely)
 );
