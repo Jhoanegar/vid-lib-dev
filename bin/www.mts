@@ -7,15 +7,13 @@ import app from 'app/app.mts';
 const port = normalizePort(nconf.get('PORT'));
 app.set('port', port);
 
-
 const server = http.createServer(app);
 server.on('error', onError);
 
 server.listen(port);
 console.log(`Server is running on port ${port}`);
 
-
-function normalizePort(value: string): number | string | boolean  {
+function normalizePort(value: string): number | string | boolean {
   const port = parseInt(value, 10);
 
   if (isNaN(port)) {
@@ -39,11 +37,13 @@ function onError(error: NodeJS.ErrnoException): void {
   switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges');
-      process.exit(1);
+      break;
     case 'EADDRINUSE':
       console.error(bind + ' is already in use');
-      process.exit(1);
+      break;
     default:
-      throw error;
+      console.error(error);
   }
+
+  process.exit(1);
 }
